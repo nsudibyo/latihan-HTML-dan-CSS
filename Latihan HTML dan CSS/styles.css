@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(113, 189, 236);
+    color: rgb(252, 248, 243);
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline;
+}
+
+h2, h3 {
+    color: rgb(113, 189, 236);
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav {
+    background-color: rgb(50, 168, 241);
+    padding: 0.5px;
+    position: sticky;
+    top: 0;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(252, 248, 243);
+    padding: .5rem .5rem;
+    border-radius: 999px;
+    transition: all .3s ease-in-out
+}
+
+nav a:hover {
+    font-weight: bold;
+    background-color: aliceblue;
+    color: rgb(113, 189, 236);
+}
+
+.profile header {
+    text-align: center;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile img {
+    width: 200px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#content {
+    flex: 5;
+}
+
+aside {
+    flex: 1;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+
+    background-color: rgb(113, 189, 236);
+    color: rgb(252, 248, 243)
+}
+
+@media screen and (max-width: 1000px) {
+    #content, aside {
+        width: 100%;
+        padding: 0;
+    }
+}
